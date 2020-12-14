@@ -1,9 +1,11 @@
 require "spec_helper"
 require "pry"
 
+
 describe "Dog" do
 
   let(:teddy) {Dog.new(name: "Teddy", breed: "cockapoo")}
+
 
   before do
     DB.execute("DROP TABLE IF EXISTS dogs")
